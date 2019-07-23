@@ -13,6 +13,7 @@ source:
 build:
   noarch: python
   number: 1
+  script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - jump = jump.jump:main
 
@@ -21,6 +22,7 @@ requirements:
     - python >=3.5
     - setuptools >=0.7
     - plumbum
+    - pip
     - click >=6.0
 
   run:
