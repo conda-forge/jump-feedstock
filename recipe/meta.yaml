@@ -1,13 +1,13 @@
 {% set name = "jump" %}
 {% set version = "0.1" %}
-{% set hash = "3b124d3a818392d7703a7cf756a7139993b7e26e1a2a4bd650a6328600afe785" %}
+{% set hash = "88ddbd11aded1c0e6333607b04281c56b407e97358deb3302f0509cfac4a45c8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/olllom/{{ name }}/tarball/{{ version }}
+  url: https://github.com/olllom/{{ name }}/archive/{{ version }}.tar.gz
   sha256: {{ hash }}
 
 build:
