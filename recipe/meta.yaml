@@ -11,9 +11,9 @@ source:
   sha256: {{ hash }}
 
 build:
-  noarch: python 
+  skip: True  # [win or py<35]
   number: 1
-  script: "{{ PYTHON }} setup.py install"
+  script: "python setup.py install"
 
 requirements:
   host:
