@@ -4,7 +4,7 @@ package:
 
 source:
   url: https://github.com/olllom/jump/archive/0.1.tar.gz
-  sha256: {{ 7678f454c209fd7418c5dbf6afa61fd7deeefd97d6e3a60dc990655cad6fdc01 }}
+  sha256: 5fcf65d9a7cfb8ef27a3cd2a24dab71fcede1f7d903be362dc515a48517de150
 
 build:
   noarch: python
