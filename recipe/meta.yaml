@@ -1,10 +1,13 @@
+{% set name = "jump" %}
+{% set version = "0.1" %}
+{% set sha256 = "5fcf65d9a7cfb8ef27a3cd2a24dab71fcede1f7d903be362dc515a48517de150" %}
 package:
-  name: "jump"
-  version: "0.1"
+  name: {{ name }}
+  version: {{ version }}
 
 source:
-  url: https://github.com/olllom/jump/archive/0.1.tar.gz
-  sha256: 5fcf65d9a7cfb8ef27a3cd2a24dab71fcede1f7d903be362dc515a48517de150
+  url: https://github.com/olllom/{{ name }}/archive/{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
   noarch: python
