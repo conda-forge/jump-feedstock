@@ -1,6 +1,6 @@
 {% set name = "jump" %}
 {% set version = "0.1" %}
-{% set hash = "88ddbd11aded1c0e6333607b04281c56b407e97358deb3302f0509cfac4a45c8" %}
+{% set hash = "7678f454c209fd7418c5dbf6afa61fd7deeefd97d6e3a60dc990655cad6fdc01" %}
 
 package:
   name: {{ name|lower }}
