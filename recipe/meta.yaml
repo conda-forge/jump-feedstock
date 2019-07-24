@@ -1,30 +1,31 @@
 {% set name = "jump" %}
 {% set version = "0.1" %}
-{% set hash = "395408a3dc9c3db2b5c200b8722a13a60898c861633b99e6e250186adffd1370" %}
-
+{% set sha256 = "5fcf65d9a7cfb8ef27a3cd2a24dab71fcede1f7d903be362dc515a48517de150" %}
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: {{ name }}
+  version: {{ version }}
 
 source:
-  url: https://github.com/olllom/{{ name }}/tarball/{{ version }}.tgz
-  sha256: {{ hash }}
+  url: https://github.com/olllom/{{ name }}/archive/{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
-  skip: True 
-  noarch: python 
-  number: 0
-  script: "{{ PYTHON }} setup.py install"
+  noarch: python
+  number: 1
+  script: "{{ PYTHON }} -m pip install . -vv"
+  entry_points:
+    - jump = jump.jump:main
 
 requirements:
   host:
-    - python 
+    - python >=3.5
     - setuptools >=0.7
     - plumbum
+    - pip
     - click >=6.0
 
   run:
-    - python
+    - python >=3.5
     - plumbum >=1.5
     - click >=6.0
 
