@@ -1,6 +1,6 @@
 {% set name = "jump" %}
-{% set version = "0.3" %}
-{% set sha256 = "54f13831277f29d6ebb90e58a4ae31b0b9ab8eea3607a4c8e68f7ff9ca9e3313" %}
+{% set version = "0.4" %}
+{% set sha256 = "402158e545cf7c31cb7d5791e7526313137c37bf4a82832134a497cb8987afb3" %}
 package:
   name: {{ name }}
   version: {{ version }}
