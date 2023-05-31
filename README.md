@@ -117,4 +117,5 @@ Feedstock Maintainers
 =====================
 
 * [@Olllom](https://github.com/Olllom/)
+* [@wiso](https://github.com/wiso/)
 
