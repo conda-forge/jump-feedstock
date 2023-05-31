@@ -1,6 +1,6 @@
 {% set name = "jump" %}
-{% set version = "0.4" %}
-{% set sha256 = "402158e545cf7c31cb7d5791e7526313137c37bf4a82832134a497cb8987afb3" %}
+{% set version = "0.5" %}
+{% set sha256 = "24a66834600e806edab818368200d92fe0fb8d710a5d08ffb45772b7ad5d4cb1" %}
 package:
   name: {{ name }}
   version: {{ version }}
@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - jump = jump.jump:main
