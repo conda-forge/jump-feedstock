@@ -1,6 +1,6 @@
 {% set name = "jump" %}
-{% set version = "0.4" %}
-{% set sha256 = "402158e545cf7c31cb7d5791e7526313137c37bf4a82832134a497cb8987afb3" %}
+{% set version = "0.5" %}
+{% set sha256 = "ae07175784eb00c4be2e3f4d9e5454a5dfbe83087972e6e7a3a9f717665c7400" %}
 package:
   name: {{ name }}
   version: {{ version }}
@@ -45,3 +45,4 @@ about:
 extra:
   recipe-maintainers:
     - Olllom
+    - wiso
