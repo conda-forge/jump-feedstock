@@ -1,9 +1,9 @@
 {% set name = "jump" %}
-{% set version = "0.5" %}
-{% set sha256 = "ae07175784eb00c4be2e3f4d9e5454a5dfbe83087972e6e7a3a9f717665c7400" %}
+{% set version = "0.6" %}
+{% set sha256 = "e88afff1ed6bd6b38d1294b315c84e36af09ecc2d9f9ec36a5b4024be1e595c6" %}
 package:
-  name: {{ name }}
-  version: {{ version }}
+  name: {{ name }}
+  version: {{ version }}
 
 source:
   url: https://github.com/olllom/{{ name }}/archive/{{ version }}.tar.gz
